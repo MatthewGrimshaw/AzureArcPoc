@@ -1,0 +1,65 @@
+{
+ "properties": {
+  "displayName": "Arc Initiative",
+  "policyType": "Custom",
+  "metadata": {
+   "version": "1.0",
+   "parameterScopes": {
+    "logAnalytics": "/subscriptions/6099726a-f0a5-4f09-852e-36cdf48782c3"
+   },
+   "createdBy": "7b361987-7571-46b9-be4b-e17ac06988f4",
+   "createdOn": "2021-05-24T20:10:25.0088876Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Deploy - Configure Log Analytics agent to be enabled on Windows virtual machines_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0868462e-646c-4fe3-9ced-a733534b6a2c",
+    "parameters": {
+     "logAnalytics": {
+      "value": "/subscriptions/6099726a-f0a5-4f09-852e-36cdf48782c3/resourcegroups/azurearcpocinfrarg/providers/microsoft.operationalinsights/workspaces/azurearcpocworkspace"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Configure Log Analytics agent on Azure Arc enabled Windows servers_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/69af7d4a-7b18-4044-93a9-2651498ef203",
+    "parameters": {
+     "logAnalytics": {
+      "value": "/subscriptions/6099726a-f0a5-4f09-852e-36cdf48782c3/resourcegroups/azurearcpocinfrarg/providers/microsoft.operationalinsights/workspaces/azurearcpocworkspace"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Deploy Log Analytics agent for Linux VMs_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/053d3325-282c-4e5c-b944-24faffd30d77",
+    "parameters": {
+     "logAnalytics": {
+      "value": "/subscriptions/6099726a-f0a5-4f09-852e-36cdf48782c3/resourcegroups/azurearcpocinfrarg/providers/microsoft.operationalinsights/workspaces/azurearcpocworkspace"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Windows machines should meet requirements for 'Windows Firewall Properties'_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/35d9882c-993d-44e6-87d2-db66ce21b636",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Windows web servers should be configured to use secure communication protocols_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/5752e6d6-1206-46d8-8ab1-ecc2f71a8112",
+    "parameters": {},
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/6099726a-f0a5-4f09-852e-36cdf48782c3/providers/Microsoft.Authorization/policySetDefinitions/d8e9565225c447368f53937e",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "d8e9565225c447368f53937e"
+}
